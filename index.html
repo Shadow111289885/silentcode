@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silent Code</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #0B0B0D;
+    color: #C7C7C7;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(11,11,13,0.6);
+    backdrop-filter: blur(6px);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: #C7C7C7;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.hero-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin: 0;
+}
+
+.hero-text p {
+    margin: 15px 0 25px;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: 1px solid #C7C7C7;
+    background: transparent;
+    color: #C7C7C7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #C7C7C7;
+    color: #0B0B0D;
+}
+
+.hero img {
+    width: 380px;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+
+.product img {
+    width: 250px;
+    margin: 30px 0;
+}
+
+.notes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.notes div {
+    max-width: 200px;
+}
+
+footer {
+    background: #141416;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 40px;
+    }
+
+    .hero img {
+        width: 260px;
+        margin-top: 30px;
+    }
+
+    .notes {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SILENT CODE</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Story</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>SILENT CODE</h2>
+        <p>Unspoken Power. Unmatched Presence.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    <img src="perfume.png" alt="Silent Code Perfume">
+</section>
+
+<section class="section">
+    <h3>Confidence doesn’t shout. It stays.</h3>
+</section>
+
+<section class="section product">
+    <h3>Silent Code Eau De Parfum</h3>
+    <img src="perfume.png" alt="Perfume">
+    <p>Long-lasting | Premium Blend</p>
+    <p><strong>₹1,499</strong></p>
+    <a href="#" class="btn">Buy Now</a>
+</section>
+
+<section class="section">
+    <h3>Fragrance Notes</h3>
+    <div class="notes">
+        <div>
+            <h4>Top</h4>
+            <p>Bergamot<br>Citrus</p>
+        </div>
+        <div>
+            <h4>Heart</h4>
+            <p>Lavender<br>Cedarwood</p>
+        </div>
+        <div>
+            <h4>Base</h4>
+            <p>Musk<br>Amber<br>Vanilla</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Find Your Signature Scent</h3>
+    <a href="#" class="btn">Shop Now</a>
+</section>
+
+<footer>
+    <p>© Silent Code. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
